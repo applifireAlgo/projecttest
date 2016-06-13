@@ -1,0 +1,35 @@
+Ext.define('Project1.project1.shared.com.model.newbc.newdomain.AdditionModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "additionId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "num1",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "num2",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "total",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

@@ -1,0 +1,38 @@
+Ext.define('Project1.project1.shared.com.model.newbc.newdomain.FGPTModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "ptPk",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "ptName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "ptDate",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "ptDatetime",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "TestFG",
+          "reference": "TestFGModel"
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

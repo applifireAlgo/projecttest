@@ -1,0 +1,4 @@
+
+
+ALTER TABLE `ast_FGPT_TP` ADD CONSTRAINT FOREIGN KEY (`testFGid`) REFERENCES `ast_TestFG_T`(`testFGid`);
+

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.newbc.newdomain.InterviewerTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-06-10T11:44:53" hostname="897202f85453" time="0.07">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.newbc.newdomain.InterviewerTestCase" time="0.028"/>
+  <testcase name="test2Update" classname="com.app.server.service.newbc.newdomain.InterviewerTestCase" time="0.013"/>
+  <testcase name="test3FindById" classname="com.app.server.service.newbc.newdomain.InterviewerTestCase" time="0.006"/>
+  <testcase name="test5NegativeTesting" classname="com.app.server.service.newbc.newdomain.InterviewerTestCase" time="0.006"/>
+  <testcase name="test6Delete" classname="com.app.server.service.newbc.newdomain.InterviewerTestCase" time="0.017"/>
+  <system-out><![CDATA[Fri Jun 10 11:44:53 UTC 2016|Log Manager Factory|Initialization Process started.....
+Fri Jun 10 11:44:53 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/project1/src/main/webapp/WEB-INF/conf]
+Fri Jun 10 11:44:53 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/project1/src/main/webapp/WEB-INF/conf]
+Fri Jun 10 11:44:53 UTC 2016|Alarm Manager|Loading Alarms ......
+Fri Jun 10 11:44:53 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
+Fri Jun 10 11:44:53 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
+Fri Jun 10 11:44:53 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=4/676 SYS=4/10 [676/0]  TPL=0/0 [0/0]  APP= A.Map=[759]  E.Map EC/RC=[322/67] )
+Fri Jun 10 11:44:53 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
+Fri Jun 10 11:44:53 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
+Fri Jun 10 11:44:53 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=5/759 SYS=4/10 [676/0]  TPL=0/0 [0/0]  APP=1/1 [83/0]  A.Map=[842]  E.Map EC/RC=[373/78] )
+Fri Jun 10 11:44:53 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
+Fri Jun 10 11:44:53 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
+Fri Jun 10 11:44:53 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=5/759 SYS=4/10 [676/0]  TPL=0/0 [0/0]  APP=1/1 [83/0]  A.Map=[842]  E.Map EC/RC=[373/78] )
+Fri Jun 10 11:44:53 UTC 2016|Alarm Manager|Initialized Exception Lookup...
+Fri Jun 10 11:44:53 UTC 2016|Log Manager|Initialize Log Config File ......
+Fri Jun 10 11:44:53 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
+Fri Jun 10 11:44:53 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
+Fri Jun 10 11:44:53 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
+Fri Jun 10 11:44:53 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
+Fri Jun 10 11:44:53 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
+Fri Jun 10 11:44:53 UTC 2016|Log Manager|Loading Default Connector for Logging ......
+Fri Jun 10 11:44:53 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
+Fri Jun 10 11:44:53 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
+Fri Jun 10 11:44:53 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@276441f] ....
+Fri Jun 10 11:44:53 UTC 2016|Scheduler|Starting the Scheduler ......
+Fri Jun 10 11:44:53 UTC 2016|Scheduler|Adding [LMID=[6bf9b08f-ea38-4da2-b01d-9ccfa2a05d73]] Delay=5 Time Unit=MINUTES
+Fri Jun 10 11:44:53 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
+Fri Jun 10 11:44:53 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
+Fri Jun 10 11:44:53 UTC 2016|Scheduler|Startup Completed..
+Fri Jun 10 11:44:53 UTC 2016|Log Manager|Initialization Process Complete ......
+Fri Jun 10 11:44:53 UTC 2016|Log Manager Factory|Log Manager READY! ID = 6bf9b08f-ea38-4da2-b01d-9ccfa2a05d73
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-06-10 11:44:53.473--ClientSession(228313112)--Connection(1120833626)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Interviewer_M (interviewrId, interviewerr, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [85F523CC-DF0F-4E90-8C48-1EF9F75FE6E1, zISaXCbW2FKwxO2ngOa9gbhyA9jbaBoqKMXcufGWc9yPGYnF8s, 1, AAAAA, 2016-06-10 11:44:53.47, AAAAA, 2016-06-10 11:44:53.47, 1, 51000]
+[EL Fine]: sql: 2016-06-10 11:44:53.482--ClientSession(1064203636)--Connection(1120833626)--Thread(Thread[Test worker,5,main])--SELECT interviewrId, interviewerr, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Interviewer_M WHERE ((activeStatus = ?) AND (interviewrId = ?))
+	bind => [1, 85F523CC-DF0F-4E90-8C48-1EF9F75FE6E1]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-06-10 11:44:53.485--ClientSession(1791348714)--Connection(1120833626)--Thread(Thread[Test worker,5,main])--SELECT interviewrId, interviewerr, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Interviewer_M WHERE (interviewrId = ?)
+	bind => [85F523CC-DF0F-4E90-8C48-1EF9F75FE6E1]
+[EL Fine]: sql: 2016-06-10 11:44:53.486--ClientSession(1791348714)--Connection(1120833626)--Thread(Thread[Test worker,5,main])--UPDATE ast_Interviewer_M SET interviewerr = ?, versionId = ? WHERE ((interviewrId = ?) AND (versionId = ?))
+	bind => [goUNYnHTV5FP2PD6wqr4wfrftKS7MGNaqKbzzI9G44U44LX103, 2, 85F523CC-DF0F-4E90-8C48-1EF9F75FE6E1, 1]
+[EL Fine]: sql: 2016-06-10 11:44:53.493--ClientSession(2081924161)--Connection(1120833626)--Thread(Thread[Test worker,5,main])--SELECT interviewrId, interviewerr, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Interviewer_M WHERE ((activeStatus = ?) AND (interviewrId = ?))
+	bind => [1, 85F523CC-DF0F-4E90-8C48-1EF9F75FE6E1]
+[EL Fine]: sql: 2016-06-10 11:44:53.506--ClientSession(60775308)--Connection(1120833626)--Thread(Thread[Test worker,5,main])--SELECT interviewrId, interviewerr, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Interviewer_M WHERE (interviewrId = ?)
+	bind => [85F523CC-DF0F-4E90-8C48-1EF9F75FE6E1]
+[EL Fine]: sql: 2016-06-10 11:44:53.507--ClientSession(60775308)--Connection(1120833626)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Interviewer_M WHERE ((interviewrId = ?) AND (versionId = ?))
+	bind => [85F523CC-DF0F-4E90-8C48-1EF9F75FE6E1, 2]
+]]></system-out>
+  <system-err><![CDATA[Interviewer.interviewerr may not be null
+java.lang.SecurityException: Interviewer.interviewerr may not be null
+	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
+	at com.app.shared.newbc.newdomain.Interviewer.isValid(Interviewer.java:135)
+	at com.app.server.service.newbc.newdomain.InterviewerTestCase.validateInterviewer(InterviewerTestCase.java:178)
+	at com.app.server.service.newbc.newdomain.InterviewerTestCase.test5NegativeTesting(InterviewerTestCase.java:209)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.GeneratedMethodAccessor108.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.GeneratedMethodAccessor107.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Interviewer.interviewerr size must be between 1 and 256
+java.lang.SecurityException: Interviewer.interviewerr size must be between 1 and 256
+	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
+	at com.app.shared.newbc.newdomain.Interviewer.isValid(Interviewer.java:135)
+	at com.app.server.service.newbc.newdomain.InterviewerTestCase.validateInterviewer(InterviewerTestCase.java:176)
+	at com.app.server.service.newbc.newdomain.InterviewerTestCase.test5NegativeTesting(InterviewerTestCase.java:214)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.GeneratedMethodAccessor108.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.GeneratedMethodAccessor107.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]></system-err>
+</testsuite>

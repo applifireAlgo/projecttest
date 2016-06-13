@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Copyright: Copyright (c)    2015
+Build-Date: Fri Jun 10 11:44:06 UTC 2016
+version: 1.0
+
